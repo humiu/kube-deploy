@@ -17,7 +17,7 @@ docker build -t $DOCKER_USER_NAME/kube-deploy .
 docker run -ti --rm $DOCKER_USER_NAME/kube-deploy
 ```
 
-### Push the kube-deploy docker image
+### Push the kube-deploy image to docker hub
 
 ```bash
 docker push $DOCKER_USER_NAME/kube-deploy
