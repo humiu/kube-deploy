@@ -9,8 +9,8 @@ LABEL maintainer="miu.manu@gmx.de"
 
 # Temporary solution until this bug is fixed (and the latest kustomize is included in kubectl)
 # https://kubernetes-sigs.github.io/kustomize/faq/#kubectl-doesnt-have-the-latest-kustomize-when-will-it-be-updated
-RUN apk update && \
-    apk --no-cache add bash curl jq docker-cli gettext && \
+RUN apk --no-cache add --update docker openrc bash curl jq gettext && \
+    rc-update add docker boot \
     curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" && \
     chmod +x ./kubectl && \
     mv ./kubectl /usr/local/bin/kubectl && \
