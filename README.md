@@ -1,4 +1,4 @@
-# [mamiu/kube-deploy](https://hub.docker.com/r/mamiu/kube-deploy) - Alpine docker image with kubectl and envsubst
+# [humiu/kube-deploy](https://hub.docker.com/r/humiu/kube-deploy) - Alpine docker image with kubectl and envsubst
 
 Alpine docker image with kubectl and envsubst for automated multi-stage Kubernetes deployments (e.g. for use in CD pipelines).
 
